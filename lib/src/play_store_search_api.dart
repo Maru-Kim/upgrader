@@ -43,7 +43,7 @@ class PlayStoreSearchAPI {
   }
 
   String? lookupURLById(String id) {
-    final url = Uri.https(playStorePrefixURL, '/store/apps/details', {'id': id})
+    final url = Uri.https(playStorePrefixURL, '/store/apps/details', {'id': id, 'gl': 'US'})
         .toString();
 
     return url;
